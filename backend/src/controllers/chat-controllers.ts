@@ -42,7 +42,7 @@ export const generateChatCompletion = async (
     await user.save();
     return res.status(200).json({ chats: user.chats });
   } catch (error) {
-    console.log(error);
+    console.log("error",error);
     return res.status(500).json({ message: "Something went wrong" });
   }
 };

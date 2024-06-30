@@ -8,7 +8,7 @@ import { connectToDatabase } from "./db/connection.js"
 const PORT= process.env.PORT||5000
 connectToDatabase().then(()=>{
   app.listen(PORT,()=>{
-    console.log("Listening on port 5000 & Connected to Database")
+    console.log("Listening on port & Connected to Database",PORT)
   })
 }).catch((err)=>{
   console.log(err)
